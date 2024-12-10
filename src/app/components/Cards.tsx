@@ -2,7 +2,7 @@ import Image from "next/image";
 import { MdPeople } from "react-icons/md";
 import { AiFillHeart, AiOutlineHeart } from "react-icons/ai";
 import { BiDoughnutChart } from "react-icons/bi";
-import { useRouter } from "next/router";
+
 
 
 
