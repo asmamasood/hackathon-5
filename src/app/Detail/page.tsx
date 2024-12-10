@@ -122,8 +122,8 @@ export default function DetailPage() {
               <h3 className="font-semibold">Alex Stanton</h3>
               <p className="text-gray-500">CEO at Bukalapak</p>
               <p className="text-gray-600 text-sm">
-                "We are very happy with the service from the MORENT App. Morent has a low price and
-                also a large variety of cars with good and comfortable facilities."
+                &quot We are very happy with the service from the MORENT App. Morent has a low price and
+                also a large variety of cars with good and comfortable facilities.&quot
               </p>
             </div>
           </div>
@@ -137,7 +137,7 @@ export default function DetailPage() {
               <h3 className="font-semibold">Skylar Dias</h3>
               <p className="text-gray-500">CEO at Amazon</p>
               <p className="text-gray-600 text-sm">
-                "Morent provides great comfort and has a wide variety of cars with good facilities."
+                $quot Morent provides great comfort and has a wide variety of cars with good facilities.&quot
               </p>
             </div>
           </div>
@@ -148,8 +148,8 @@ export default function DetailPage() {
       <aside className="w-1/4 bg-white p-6 rounded-lg shadow-md">
         <h2 className="text-xl font-bold mb-2">Nissan GT – R</h2>
         <p className="text-gray-600 mb-4">
-          NISMO has become the embodiment of Nissan's outstanding performance, inspired by the most
-          unforgiving proving ground, the "race track".
+          NISMO has become the embodiment of Nissan&apos;s outstanding performance, inspired by the most
+          unforgiving proving ground, the "race track&quot;.
         </p>
         <ul className="mb-4">
           <li className="flex justify-between">
