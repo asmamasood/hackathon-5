@@ -175,105 +175,107 @@ export default function DetailPage() {
       </aside> </div>
       <div className="w-[1016] h-[44] flex justify-between items-center bg-gray-200">Recomendation Car
          <p className="font-semi-bold w-[64px] text-right h-[44px] text-[#3563E9]">Veiw All</p></div>
-
-   {/* Recent Cars Grid */}
-   <div className="grid grid-cols-3 gap-6">
-            {RecentCars.map((car) => (
-              <div key={car.id} className="bg-white rounded-lg shadow p-4 relative">
-                {/* Car Header */}
-                <div className="flex justify-between items-center">
-                  <h3 className="text-lg font-bold">{car.name}</h3>
-                  <button>
-                    {car.liked ? (
-                        <div className="text-red-500 text-xl">
-                      <AiFillHeart /></div>
-                    ) : ( <div className="text-gray-300 text-xl">
-                      <AiOutlineHeart /> </div>
-                    )}
-                  </button>
-                </div>
-                {/* Car Image */}
-                <Image src={car.image} alt={car.name} width={300} height={200} className="rounded-md" />
-                {/* Car Features */}
-                <div className="flex justify-between items-center mt-4 text-sm text-gray-600">
-                  <div className="flex items-center gap-1">
-                    <Image src="/gas-station.png" alt="Fuel" width={16} height={16} />
-                    <span>{car.features.fuel}</span>
-                  </div>
-                  <div className="flex items-center gap-1">
-                    <BiDoughnutChart />
-                    <span>{car.features.transmission}</span>
-                  </div>
-                  <div className="flex items-center gap-1">
-                    <MdPeople />
-                    <span>{car.features.people}</span>
-                  </div>
-                </div>
-                {/* Price and Button */}
-                <div className="flex justify-between items-center mt-4">
-                  <div>
-                    <p className="text-blue-500 text-lg">{car.price}/day</p>
-                    {car.oldPrice && (
-                      <p className="text-gray-400 line-through">{car.oldPrice}</p>
-                    )}
-                  </div>
-                  <button className="bg-blue-500 text-white px-4 py-2 rounded">
-                    Rent Now
-                  </button>
-                </div>
-              </div>
-            ))}
-          </div>
-
-
-          <div className="w-[1016] h-[44] flex justify-between items-center bg-gray-200">Recomendation Car <p className="font-semi-bold w-[64px] text-right h-[44px] text-[#3563E9]">Veiw All</p></div>
-   {/*Recomendation Cars Grid */}
-   <div className="grid grid-cols-3 gap-6">
-          {RecomendationCars.map((car) => (
-              <div key={car.id} className="bg-white rounded-lg shadow p-4 relative">
-                {/* Car Header */}
-                <div className="flex justify-between items-center">
-                  <h3 className="text-lg font-bold">{car.name}</h3>
-                  <button>
-                    {car.liked ? (
-                        <div className="text-red-500 text-xl">
-                      <AiFillHeart /></div>
-                    ) : ( <div className="text-gray-300 text-xl">
-                      <AiOutlineHeart /> </div>
-                    )}
-                  </button>
-                </div>
-                {/* Car Image */}
-                <Image src={car.image} alt={car.name} width={300} height={200} className="rounded-md" />
-                {/* Car Features */}
-                <div className="flex justify-between items-center mt-4 text-sm text-gray-600">
-                  <div className="flex items-center gap-1">
-                    <Image src="/gas-station.png" alt="Fuel" width={16} height={16} />
-                    <span>{car.features.fuel}</span>
-                  </div>
-                  <div className="flex items-center gap-1">
-                    <BiDoughnutChart />
-                    <span>{car.features.transmission}</span>
-                  </div>
-                  <div className="flex items-center gap-1">
-                    <MdPeople />
-                    <span>{car.features.people}</span>
-                  </div>
-                </div>
-                {/* Price and Button */}
-                <div className="flex justify-between items-center mt-4">
-                  <div>
-                    <p className="text-blue-500 text-lg">{car.price}/day</p>
-                    {car.oldPrice && (
-                      <p className="text-gray-400 line-through">{car.oldPrice}</p>
-                    )}
-                  </div>
-                  <button className="bg-blue-500 text-white px-4 py-2 rounded">
-                    Rent Now
-                  </button>
-                </div>
-              </div>
-            ))}
-          </div> </div>
+         
+            {/* Recent Cars Grid */}
+            <div className="grid grid-cols-3 gap-6">
+                     {RecentCars.map((car) => (
+                       <div key={car.id} className="bg-white rounded-lg shadow p-4 relative">
+                         {/* Car Header */}
+                         <div className="flex justify-between items-center">
+                           <h3 className="text-lg font-bold">{car.name}</h3>
+                           <button>
+                             {car.liked ? (
+                                 <div className="text-red-500 text-xl">
+                               <AiFillHeart /></div>
+                             ) : ( <div className="text-gray-300 text-xl">
+                               <AiOutlineHeart /> </div>
+                             )}
+                           </button>
+                         </div>
+                         {/* Car Image */}
+                         <Image src={car.image} alt={car.name} width={300} height={200} className="rounded-md" />
+                         {/* Car Features */}
+                         <div className="flex justify-between items-center mt-4 text-sm text-gray-600">
+                           <div className="flex items-center gap-1">
+                             <Image src="/gas-station.png" alt="Fuel" width={16} height={16} />
+                             <span>{car.features.fuel}</span>
+                           </div>
+                           <div className="flex items-center gap-1">
+                             <BiDoughnutChart />
+                             <span>{car.features.transmission}</span>
+                           </div>
+                           <div className="flex items-center gap-1">
+                             <MdPeople />
+                             <span>{car.features.people}</span>
+                           </div>
+                         </div>
+                         {/* Price and Button */}
+                         <div className="flex justify-between items-center mt-4">
+                           <div>
+                             <p className="text-blue-500 text-lg">{car.price}/day</p>
+                             {car.oldPrice && (
+                               <p className="text-gray-400 line-through">{car.oldPrice}</p>
+                             )}
+                           </div>
+                           <button className="bg-blue-500 text-white px-4 py-2 rounded">
+                             Rent Now
+                           </button>
+                         </div>
+                       </div>
+                     ))}
+                   </div>
+         
+         
+                   <div className="w-[1016] h-[44] flex justify-between items-center bg-gray-200">Recomendation Car 
+                     <p className="font-semi-bold w-[64px] text-right h-[44px] text-[#3563E9]">Veiw All</p></div>
+            {/*Recomendation Cars Grid */}
+            <div className="grid grid-cols-3 gap-6">
+                   {RecomendationCars.map((car) => (
+                       <div key={car.id} className="bg-white rounded-lg shadow p-4 relative">
+                         {/* Car Header */}
+                         <div className="flex justify-between items-center">
+                           <h3 className="text-lg font-bold">{car.name}</h3>
+                           <button>
+                             {car.liked ? (
+                                 <div className="text-red-500 text-xl">
+                               <AiFillHeart /></div>
+                             ) : ( <div className="text-gray-300 text-xl">
+                               <AiOutlineHeart /> </div>
+                             )}
+                           </button>
+                         </div>
+                         {/* Car Image */}
+                         <Image src={car.image} alt={car.name} width={300} height={200} className="rounded-md" />
+                         {/* Car Features */}
+                         <div className="flex justify-between items-center mt-4 text-sm text-gray-600">
+                           <div className="flex items-center gap-1">
+                             <Image src="/gas-station.png" alt="Fuel" width={16} height={16} />
+                             <span>{car.features.fuel}</span>
+                           </div>
+                           <div className="flex items-center gap-1">
+                             <BiDoughnutChart />
+                             <span>{car.features.transmission}</span>
+                           </div>
+                           <div className="flex items-center gap-1">
+                             <MdPeople />
+                             <span>{car.features.people}</span>
+                           </div>
+                         </div>
+                         {/* Price and Button */}
+                         <div className="flex justify-between items-center mt-4">
+                           <div>
+                             <p className="text-blue-500 text-lg">{car.price}/day</p>
+                             {car.oldPrice && (
+                               <p className="text-gray-400 line-through">{car.oldPrice}</p>
+                             )}
+                           </div>
+                           <button className="bg-blue-500 text-white px-4 py-2 rounded">
+                             Rent Now
+                           </button>
+                         </div>
+                       </div>
+                     ))}
+                   </div> 
+ </div>
   )}
 

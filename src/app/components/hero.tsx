@@ -65,21 +65,21 @@ const HeroSection = () => {
       <p className="font-semibold text-gray-700 text-lg">Pick-Up</p>
     </div>
     <div className="flex gap-4">
-      {/* Locations Dropdown */}
+      {/* Locations  */}
       <div className="flex flex-col">
         <label className="block text-sm font-bold text-gray-600 mb-1">Locations</label>
         <select className="w-40 bg-white text-[#90A3BF]">
           <option>Select your city</option>
         </select>
       </div>
-      {/* Date Dropdown */}
+      {/* Date  */}
       <div className="flex flex-col">
         <label className="block text-sm font-bold text-gray-600 mb-1">Date</label>
         <select className="w-40 bg-white text-[#90A3BF] ">
           <option>Select your date</option>
         </select>
       </div>
-      {/* Time Dropdown */}
+      {/* Time  */}
       <div className="flex flex-col">
         <label className="block text-sm font-bold text-gray-600 mb-1">Time</label>
         <select className="w-40 bg-white text-[#90A3BF] ">
