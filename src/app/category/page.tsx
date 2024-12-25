@@ -21,7 +21,7 @@ export default function categoryPage() {
     <div className="bg-gray-100 p-5">
       <div className="flex gap-5">
         {/* Sidebar */}
-        <aside className="w-[200px] bg-white p-5 rounded-lg shadow">
+        <aside className=" hidden lg: w-[200px] bg-white p-5 rounded-lg shadow">
           <h2 className="text-lg font-bold mb-4">Type</h2>
           <ul>
             {["Sport(10)", "SUV(12)", "MPV(16)", "Sedan(20)", "Coupe(14)", "Hatchback(14)"].map((type) => (
@@ -50,32 +50,32 @@ export default function categoryPage() {
           <input type="range" className="w-full" min="0" max="100" />
           <p className="text-right mt-2">Max. $100.00</p>
         </aside>
-
+ 
         {/* Main Content */}
         <div className="flex-1">
           {/* Pick-Up and Drop-Off Section */}
           <div className="bg-white p-5 rounded-lg shadow mb-8">
-            <div className="flex justify-between items-start gap-10">
+            <div className="flex flex-col  lg:flex-row justify-between items-start gap-10">
               {/* Pick-Up Section */}
-              <div className="w-[486px] h-[132px]flex-1">
+              <div className="w-[295px] h-[88px] lg:w-[486px] h-[132px]flex-1">
               <span className="w- [18px] h-[18px] bg-blue-500 rounded-full"></span>
                 <h3 className=" leading-[24px] tracking-[-2%] Plus Jakarta Sans text-xl font-semibold mb-4">Pick-Up</h3>
                 <div className="flex items-center gap-4">
-                  <div className="flex flex-col">
-                    <label className="text-sm font-semibold">Locations</label>
-                    <select className="w-40 bg-gray-100 border rounded-md p-1">
+                  <div className=" flex flex-col">
+                    <label className="w-[76px] h-[16px] text-xs lg:text-sm font-semibold">Locations</label>
+                    <select className=" lg:w-40 bg-gray-100 border rounded-md p-1">
                       <option>Select your city</option>
                     </select>
                   </div>
                   <div className="flex flex-col">
                     <label className="text-sm font-semibold">Date</label>
-                    <select className="w-40 bg-gray-100 border rounded-md p-1">
+                    <select className="lg:w-40 bg-gray-100 border rounded-md p-1">
                       <option>Select your date</option>
                     </select>
                   </div>
                   <div className="flex flex-col">
                     <label className="text-sm font-semibold">Time</label>
-                    <select className="w-40 bg-gray-100 border rounded-md p-1">
+                    <select className=" lg:w-40 bg-gray-100 border rounded-md p-1">
                       <option>Select your time</option>
                     </select>
                   </div>
@@ -90,37 +90,37 @@ export default function categoryPage() {
   </div>
 
               {/* Drop-Off Section */}
-              <div className="w-[486px] h-[132px]flex-1">
-              <span className="w- [18px] h-[18px] bg-blue-500 rounded-full"></span>
+              <div className=" lg:w-[486px] h-[132px]flex-1">
+              <span className="w-[18px] h-[18px] bg-blue-500 rounded-full"></span>
                 <h3 className="text-xl font-semibold mb-4">Drop-Off</h3>
                 <div className="flex items-center gap-4">
                   <div className="flex flex-col">
                     <label className="text-sm font-semibold">Locations</label>
-                    <select className="w-40 bg-gray-100 border rounded-md p-1">
+                    <select className=" lg:w-40 bg-gray-100 border rounded-md p-1">
                       <option>Select your city</option>
                     </select>
                   </div>
                   <div className="flex flex-col">
                     <label className="text-sm font-semibold">Date</label>
-                    <select className="w-40 bg-gray-100 border rounded-md p-1">
+                    <select className=" lg:w-40 bg-gray-100 border rounded-md p-1">
                       <option>Select your date</option>
                     </select>
                   </div>
                   <div className="flex flex-col">
                     <label className="text-sm font-semibold">Time</label>
-                    <select className="w-40 bg-gray-100 border rounded-md p-1">
+                    <select className=" lg:w-40 bg-gray-100 border rounded-md p-1">
                       <option>Select your time</option>
                     </select>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
+          </div> 
 
 
 
           <div className="bg-gray-100 p-5">
-      <div className="grid grid-cols-3 gap-6">
+      <div className="grid grid-col-1 lg:grid-cols-3 gap-6">
         {cars.map((car) => (
           <div key={car.id} className="bg-white rounded-lg shadow p-4">
             {/* Car Header with Name and Heart Icon */}
@@ -165,7 +165,7 @@ export default function categoryPage() {
           </div>
         ))}
       </div>
-    </div></div></div></div>
+    </div></div></div></div> 
   );
 }
 

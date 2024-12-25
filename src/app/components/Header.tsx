@@ -2,7 +2,7 @@ import Image from "next/image";
 const Header =()=>{
     return(
         
-              <header className="bg-white border-b border-gray-200 py-4">
+              <header className="bg-white border-b border-gray-200 py-4 hidden lg:block">
                 <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-start md:items-center space-y-4 md:space-y-0">
                   {/* Title Section */}
                   <div className="flex items-center space-x-2">
